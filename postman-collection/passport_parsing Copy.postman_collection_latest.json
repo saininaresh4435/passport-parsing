@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "4e6e7275-e5b8-4db0-beb5-19c4f76fdebe",
+		"name": "passport_parsing Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "local_test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"config\": {\n        \"language\": {\n            \"sourceLanguage\": \"en\"\n        },\n        \"superresolution\":True\n        \n    },\n    \"image\":[{\n    \"local_path\": \"kd_passport.png\"}\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/tarento/v0/passport-parsing",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"tarento",
+						"v0",
+						"passport-parsing"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "local_test_with_url",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"config\": {\n        \"language\": {\n            \"sourceLanguage\": \"en\"\n        },\n        \"superresolution\":False\n    },\n    \"image\": [\n        {\n            \"imageUri\": [\n                \"https://anuvaad-raw-datasets.s3-us-west-2.amazonaws.com/anuvaad_ocr_english.jpg\"\n            ]\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/tarento/v0/passport-parsing",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"tarento",
+						"v0",
+						"passport-parsing"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
