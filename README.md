@@ -58,6 +58,11 @@ Docker Run with volume mount:
 ```bash
 docker run -d -v ./input:/app/input  -p 5050:5000 image-id
 ```
+#### Train ROI detection model
+
+Use this repo to setup ROI detection model and training on custom dataset:
+
+https://github.com/project-anuvaad/ocr-toolkit/tree/ocr_toolkit/layout-model-training
 
 
 #### Sample Output:
